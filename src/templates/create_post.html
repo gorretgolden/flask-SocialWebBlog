@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}
+Create New Post
+{% endblock %}   
+{% block content %}
+<form action = "http://localhost:5000/result" method = "POST">
+    <p>Name <input type = "text" name = "Name" /></p>
+    <p>Physics <input type = "text" name = "Physics" /></p>
+    <p>Chemistry <input type = "text" name = "chemistry" /></p>
+    <p>Maths <input type ="text" name = "Mathematics" /></p>
+    <p><input type = "submit" value = "submit" /></p>
+ </form>
+
+ <div>
+    <table border = 1>
+        {% for key, value in result.items() %}
+    
+        <tr>
+           <th> {{ key }} </th>
+           <td> {{ value }} </td>
+        </tr>
+    
+        {% endfor %}
+     </table>
+ </div>
+ {% endblock %}

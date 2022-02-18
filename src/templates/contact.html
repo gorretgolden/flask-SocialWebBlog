@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Contact Me Page{% endblock %}
+{% block content%}
+<form style="width:40%;margin:0 auto; margin-top:30px;margin-bottom:30px">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Phone number</label>
+      <input type="text" class="form-control" style="height:30%">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Location</label>
+        <input type="text" class="form-control" style="height:30%">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Message</label>
+        <input type="text" class="form-control" style="height:40px">
+      </div>
+    <button type="submit" class="btn btn-primary bg-lg">Submit</button>
+  </form>
+{%endblock%}

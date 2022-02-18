@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Post page{% endblock %}
+{% block content%}
+<form style="width:40%;margin:0 auto; margin-top:30px;margin-bottom:30px">
+    <div class="mb-3">
+        <label for="titlr" class="form-label" style="font-size:30px">Create New Post</label><br>
+   
+      <input value="Enter post title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      
+      <input value="Enter post content" type="text" class="form-control" style="height:100px" >
+    </div>
+    <br>
+    <div style="padding;20px">
+
+        <button type="submit" class="btn btn-primary">Create New</button>
+        <button type="submit" class="btn btn-primary">View Posts</button>
+    </div>
+
+  </form>
+
+  <form style="width:40%;margin:0 auto; margin-top:30px;margin-bottom:30px">
+    <div class="mb-3">
+      <label for="title" class="form-label" style="font-size:20px">Leave a comment</label>
+      
+      
+    </div>
+    <div class="mb-3">
+
+      <input placeholder="Comment here" type="text" class="form-control" style="height:100px" >
+    </div>
+    <br>
+    <div style="padding;20px">
+
+        <button type="submit" class="btn btn-primary">Send now</button>
+       
+    </div>
+
+  </form>
+{%endblock%}
